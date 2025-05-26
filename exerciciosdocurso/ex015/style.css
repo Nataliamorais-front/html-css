@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    background-color:pink;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color:orangered;
+    background-color: rgb(133, 224, 220);
+}
+
+h2{
+    color:rgb(75, 75, 88);
+    
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+a{
+    color:blueviolet;
+}

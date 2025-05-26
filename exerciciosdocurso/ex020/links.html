@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elemento</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:black;
+           font-weight:bold;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            background-color: rgb(216, 243, 174);
+            
+            
+        }
+
+        a:visited{
+            color:red;
+        
+            
+
+        }
+
+        a:active{
+            border-style: dotted;
+            background-color: yellow;
+
+        }
+
+        .especial::before{
+            content: '⇒';
+        }
+
+        .especial::after{
+            content: '⇐';
+            font-weight: bold;
+        }
+
+        .especial{
+            background-color: #e0b291;
+        }
+
+    
+
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/nat%C3%A1lia-morais-teixeira-3b4487120/">NataliaMoraisTeixeira</a> </li>
+        <li><a href="https://github.com/gustavoguanabara/html-css" class="especial">Github Gustavo Guanabara</a></li>
+    </ul>
+</body>
+</html>

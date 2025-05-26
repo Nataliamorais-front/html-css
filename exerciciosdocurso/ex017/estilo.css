@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 2rem; /* 32px */
+    margin-bottom: 20px;
+  }
+  
+  .px {
+    font-size: 16px;
+    color: darkblue;
+  }
+  
+  .rem {
+    font-size: 1rem; /* 16px */
+    color: darkgreen;
+  }
+  
+  .pai {
+    font-size: 20px; /* vai afetar o 1em dentro */
+    color: darkred;
+  }
+  
+  .em {
+    font-size: 1em; /* 20px porque herda da div .pai */
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 0.875rem; /* 14px */
+    color: gray;
+  }
