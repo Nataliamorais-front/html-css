@@ -7,6 +7,7 @@
     <style>
         #container{
             background-image: url('Imagens/target001.png');
+            background-size: 100% 100%;
             position: relative;
             background-color: blueviolet;
             height: 89vh;
@@ -16,21 +17,25 @@
         }
 
         #conteudo{
+            background-image: url('Imagens/target001.png');
+            background-size: 100% 100%;
            position: absolute;
             background-color: chartreuse;
+            
             height: 200px;
             width: 400px;
            
             top:50%;
-            left:30%;
+            left:50%;
             
-            
+           transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
     <section id="container">
         <article id="conteudo">
+           
 
         </article>
     </section>
