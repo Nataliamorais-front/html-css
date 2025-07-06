@@ -3,13 +3,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 *{
     margin:0px;
     padding:0px;
 }
 
 :root{
-    --fonte-destaque:'Passion One', sans-serif;
+    --fonte-destaque:'Passion One', cursive;
+    --fonte-texto:"Sriracha", cursive;
 }
 
 html, body{
@@ -21,6 +24,7 @@ header{
     background-color: black;
     color:white;
     text-align: center;
+    
    
     
     
@@ -29,7 +33,7 @@ header{
 
 header h1{
     font-family: var(--fonte-destaque);
-    font-size: 8vh;
+    font-size: 10vw;
     padding-top: 50px;
     font-variant: small-caps; /*Torna as letras maiusculas, porém não tão gritante */
 }
@@ -53,6 +57,12 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 20px;
+    font-family: var(--fonte-texto);
+    font-style: italic;
+    font-size: 3vw;
+    
+    
+    
 }
 
 section.normal{
@@ -63,11 +73,13 @@ section.normal{
 section.imagem{
     background-color:rgb(77, 77, 77) ;
     color:white;
+   
 }
 
 section.imagem >p{
     background-color: rgba(0, 0, 0, 0.452);
-    width: 350px;
+    display: inline-block;
+    padding: 8px;
 
 }
 
