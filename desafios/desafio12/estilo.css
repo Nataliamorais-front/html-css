@@ -48,6 +48,13 @@ header > p{
     
 }
 
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
 section.normal{
     background-color: white;
     color:black;
@@ -56,6 +63,12 @@ section.normal{
 section.imagem{
     background-color:rgb(77, 77, 77) ;
     color:white;
+}
+
+section.imagem >p{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 350px;
+
 }
 
 header a:hover, footer a:hover{
