@@ -33,7 +33,7 @@ header{
 
 header h1{
     font-family: var(--fonte-destaque);
-    font-size: 10vw;
+    font-size: 8vw;
     padding-top: 50px;
     font-variant: small-caps; /*Torna as letras maiusculas, porém não tão gritante */
 }
@@ -59,11 +59,16 @@ section{
     padding-left: 20px;
     font-family: var(--fonte-texto);
     font-style: italic;
-    font-size: 3vw;
+    font-size: 4vw;
     
     
     
 }
+
+section > p{
+    padding-bottom: 1.6em;
+}
+
 
 section.normal{
     background-color: white;
@@ -79,7 +84,12 @@ section.imagem{
 section.imagem >p{
     background-color: rgba(0, 0, 0, 0.452);
     display: inline-block;
-    padding: 8px;
+    padding: 10px;
+
+}
+
+section#img01{
+    background-image: url('../imagens/._background001.jpg')
 
 }
 
