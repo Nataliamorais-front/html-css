@@ -84,8 +84,8 @@ section.imagem{
     color:white;
     background-size: cover;
     box-shadow: inset 3px 8px 5px 2px rgba(34, 34, 34, 0.288);
-    background-attachment: fixed;
-    background-position: right center;
+
+    background-position: center center;
     
     
    
