@@ -84,7 +84,8 @@ section.imagem{
     background-size: cover;
     box-shadow: inset 3px 8px 5px 2px rgba(34, 34, 34, 0.288);
     background-attachment: fixed;
-    height: auto;
+    min-width: 95vh;
+   
 
    
 
