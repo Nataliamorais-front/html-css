@@ -85,8 +85,9 @@ section.imagem{
     background-size: cover;
     box-shadow: inset 3px 8px 5px 2px rgba(34, 34, 34, 0.288);
     background-attachment: fixed;
-    min-width: 95vh;
-    display: block;
+    background-position: right center;
+    
+    
    
 
    
@@ -104,12 +105,17 @@ section.imagem >p{
 
 section#img01{
     background-image: url('imagens/background001.jpg');
-    background-position: right center;
-    background-size: cover; 
+    height: auto;
+
+    
+     
 }
 
 section#img02{
     background-image: url('imagens/background002.jpg');
+    height: auto;
+    
+
     
     
 }
