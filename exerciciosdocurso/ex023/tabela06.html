@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando Estilos em Colunas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+
+            
+        }
+
+        caption{
+            color: brown;
+            font-size: 1.7em;
+        }
+
+        td, th{
+            border: 3px solid orange;
+            padding: 10px;
+        }
+
+        col.nome{
+            background-color: darkkhaki;
+            width: 200px;
+        }
+
+        col.idade{
+            background-color: darksalmon;
+        }
+
+        col.grupo{
+            background-color: gray;
+        }
+
+        col.profissao{
+            background-color: darkseagreen;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="grupo" span="2">
+        
+            <col class="profissao">
+        </colgroup>
+  
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <th scope="row">Joaozinho</th>
+            <td>31 anos</td>
+            <td>Masculino</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <th scope="row">Ana Maria</th>
+            <td>29 anos</td>
+            <td>Feminino</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <th scope="row">Gustavo</th>
+            <td>25 anos</td>
+            <td>Masculino</td>
+            <td>Estagiario</td>
+        </tr>
+        <th scope="row">Hélio</th>
+        <td>30 anos</td>
+        <td>Feminino</td>
+        <td>Motorista</td>
+        </tr>
+        <tr>
+            <th scope="row">Natalia</th>
+            <td>32 anos</td>
+            <td>Feminino</td>
+            <td>Programadora</td>
+        </tr>
+    </table>
+</body>
+</html>
