@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com checkbox e radio</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Linguagem favoritas</legend> 
+        <form 
+        action="cadastro.php" 
+        method="get"
+        autocomplete="on">
+        <input type="checkbox" name="html" id="ihtml"> 
+        <label for="ihtml">
+            HTML
+            
+        </label> <br>
+                <input type="checkbox" name="css" id="icss"> 
+        <label for="icss">
+            CSS
+            
+        </label> <br>
+                <input type="checkbox" name="js" id="ijavascript" checked> 
+        <label for="ijavascript" >
+            JavaScript
+            
+        </label>
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Qual seu sexo
+        </legend>
+        <input 
+        type="radio" name="sexo" id="ifem" value="F">
+        <label for="ifem">
+            Feminino
+
+        </label>
+        <input 
+        type="radio" name="sexo" id="imas" value="M">
+        <label for="imas">
+            Masculino
+
+        </label>
+                <input 
+        type="radio" name="sexo" id="iout">
+        <label for="iout">
+            Outros
+
+        </label>
+
+        <label for="imsg">
+            Justifique
+        </label>
+        <input type="text" name="mensagem" id="imsg" autocomplete="on">
+    </fieldset>
+
+    
+<p>
+    
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+</p>
+    
+
+</body>
+</html>
