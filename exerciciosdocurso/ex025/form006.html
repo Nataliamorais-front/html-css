@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para evento online </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            width: 52%;
+            background-color: rgba(240, 213, 178, 0.541);
+            color: rgba(199, 16, 199, 0.678);
+            font-size: 15px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="post">
+       
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <h4 style="color: rgb(226, 9, 9);">Campos Obrigatórios</h4>
+                <p>
+                    <label for="name">Nome:</label>
+                        <input type="text" name="nome" id="name" placeholder="Nome Completo" autocomplete="on" required  size="24">
+                    
+                </p>
+                <p>
+                    <label for="email_">
+                        Email:
+                        
+                    </label>
+                    <input type="email" name="email" id="email_" required placeholder="name@name.com.br">
+                </p>
+                <p>
+                    <label for="senha_">
+                        Senha: (Senha com no minimo 5 números)
+                    
+                    </label>
+                    <input type="password" name="senha" id="senha_" required  minlength="5" maxlength="10" >
+                </p>
+                <p>
+                    <label for="tel">
+                        Telefone Celular:
+                    
+                    </label>
+                    <input type="tel" name="telefone" id="tel" required pattern="^\(\d{2}\)\s?\d{5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                </p>
+                <p>
+                    <label for="date">
+                        Data de Nascimento:
+                        
+                    </label>
+                    <input type="date" name="datadenascimento" id="date" >
+                </p>
+
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <p>
+                            <label for="fem">
+                                Feminino
+                            
+                            </label>
+                            <input type="radio" name="sexo" id="Fem" value="F">
+                            <label for="Masc">
+                                Masculino
+                            
+                            </label>
+                            <input type="radio" name="sexo" id="Masc" value="M">
+                    </p>
+                </fieldset>
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Ingressos</legend>
+                <p>
+                    <label for="number_">
+                        Quantidade de ingressos
+                   
+                    </label>
+                    <input type="number" name="quantidadedeingresso" id="number_" min="1" max="10">
+                </p>
+            </fieldset>
+            <p>
+                 <fieldset>
+                    <legend> Preferencia de Eventos:</legend>
+                    
+                    <label for="show">
+                       Shows
+                    
+                    </label>
+                    <input type="checkbox" name="preferencias" id="show">
+                     
+                    <label for="teatro">
+                    Teatro
+                    
+                    </label>
+                    <input type="checkbox" name="preferencias" id="teatro">
+
+                     <label for="workshop">
+                    Workshop
+                    
+                    </label>
+                    <input type="checkbox" name="preferencias" id="workshop">
+                 </fieldset>
+            </p>
+      
+
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+</html>
