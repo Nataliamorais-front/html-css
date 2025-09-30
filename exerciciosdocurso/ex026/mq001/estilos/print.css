@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para impressora */
+
+html, body{
+   
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2em;
+    font-weight: 500;
+    margin: 25px;
+
+}
+
+header{
+    text-align: center;
+}
+
+menu{
+    display: none;
+
+}
+
+article{
+    width: 100%;
+}
+
+article h2{
+    margin: 20px;
+}
+
+article h3{
+    margin: 30px;
+}
+
+article::after{
+    content: 'Este conteudo foi feito para o exericio de Media Queries';  
+    font-size: 2em;
+} /* eu uso esse pseudoelemento quando eu quero que uma mensagem apareça só na impressão /*
+
+
+
+
