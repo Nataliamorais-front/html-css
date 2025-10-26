@@ -44,6 +44,9 @@ img#tv {display: none;}
     
 } 
 
+
+/* Formato para Desktops */
+
 @media screen and (min-width:992px) and (max-width:1200px) {
     body{
         background-image: url(../Imagens/back-pc.jpg);
@@ -68,6 +71,10 @@ img#tv {display: none;}
 
 }
 
+
+/* Formato para telas maiores de 1200px */
+
+
 @media screen and (min-width: 1200px) {
     body{
         background-image: url(../Imagens/back-tv.jpg);
@@ -91,6 +98,10 @@ img#pc {display: none;}
 img#tv {display: block;}
 }
 
+
+
+
+/* Formato com a tela orizontal */
 
 @media screen and (orientation: landscape) {
     html {
