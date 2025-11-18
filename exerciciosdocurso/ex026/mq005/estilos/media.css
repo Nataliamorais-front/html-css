@@ -1,0 +1,52 @@
+
+@media (min-width: 768px){
+
+    header h1{
+        font-size: 2em;
+    }
+
+       i#burguer{
+        display: none;
+
+    }
+
+    menu{
+        display: block;
+        border: none;
+        
+     
+         
+        
+
+    }
+
+    menu ul li{
+       display: flex;
+       gap: 10px;
+       
+        
+       
+       
+    }
+
+    menu a{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    main{
+        width: 70vw;
+          max-width: 700px;
+         padding: 20px;
+    }
+
+    article h2{
+        font-size: 1.60em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+}

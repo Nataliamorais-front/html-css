@@ -6,8 +6,9 @@
         <title>Media Queries</title>
         <link rel="stylesheet" href="estilos/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <link rel="stylesheet" href="estilos/media.css">
     </head>
-    <body>
+    <body onresize="mudarTamanho()">
     <header>
             <h1>Meu Site</h1>
             <i id="burguer"  class="material-symbols-outlined" onclick="clickMenu()">
@@ -27,16 +28,25 @@
     </header> 
     <main>
         <article>
-            <h1>Testando Media Queries</h1>
-            <p>Uma menina de 10 anos morreu no sábado (25) após sofrer um acidente com quadriciclo em uma fazenda em Nova Santa Helena, a 622 km de Cuiabá. A causa do acidente é investigada. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni dignissimos ex voluptates vel praesentium culpa aspernatur incidunt? Eveniet, autem. </p>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perferendis minus sit, a, necessitatibus quas est dolores magni alias consequatur earum culpa? Recusandae at doloremque perspiciatis in dolorum vero eaque architecto facere dignissimos facilis, laborum asperiores praesentium ipsa consectetur deserunt, quis ad animi natus et totam culpa aliquam aliquid sed odit. Architecto explicabo maiores suscipit rem, veritatis nisi nulla. Facere eaque quasi deleniti asperiores in, saepe eligendi eum delectus explicabo? </p>
 
-            <p>Segundo a Polícia Militar, o pai da criança e a madrasta levaram a menina até uma Unidade Básica de Saúde na cidade, por volta das 5h da manhã. A vítima foi identificada como Luisa Mendes Claus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam saepe commodi suscipit explicabo dolores distinctio fugiat excepturi, voluptas impedit voluptate repellendus debitis eos culpa nam quaerat quasi ullam mollitia temporibus blanditiis aliquam vero soluta iste expedita. Quo quos error molestias inventore perferendis culpa ipsam optio reiciendis, atque nam et. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi quas excepturi enim incidunt quia eos nihil omnis, dolorem voluptate, dolores aperiam culpa ullam dolore ea tempore blanditiis. Aspernatur, mollitia sint. Quod, ullam. Laudantium natus optio voluptas minima molestiae id aliquam tempore maxime, assumenda aperiam perspiciatis cupiditate quibusdam cum consequatur laboriosam! Porro error nulla praesentium iure eveniet tempore doloremque enim velit officiis itaque deleniti sunt, exercitationem quod quaerat odit at? </p>
 
-            <p>À polícia, a madrasta contou que a criança tinha costume de andar de quadriciclo na fazenda. No momento do acidente, o pai da criança estava acompanhando a plantação na lavoura.</p>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod expedita voluptatibus sunt laudantium doloremque iusto molestias cum, minus quo deserunt odio odit quam velit earum enim nisi perspiciatis laborum aliquid corrupti et? Ex, placeat! Dolore inventore eum accusantium numquam, velit voluptas voluptates officia ad, est quisquam voluptatibus eos odit! Qui maiores quos perspiciatis laboriosam nulla itaque dicta odio mollitia similique fugiat, culpa officiis. Animi autem porro iste. Libero laudantium nostrum praesentium illum earum suscipit sapiente minima? Dolor molestiae officiis molestias.</p>
             
         </article>
     </main>
     <script>
+        function mudarTamanho(){
+            if (window.innerWidth >= 768) {
+                nav.style.display = 'block'}
+                else{
+                    nav.style.display = 'none'}
+                }
+            
+        
+
         function clickMenu(){
             if (nav.style.display == 'block'){
                 nav.style.display = 'none'
