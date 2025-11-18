@@ -1,5 +1,8 @@
 
 @media (min-width: 768px){
+    header.cabecalho{
+    background-color: #c72c2c;
+}
 
     header h1{
         font-size: 2em;
@@ -13,6 +16,8 @@
     menu{
         display: block;
         border: none;
+        width: 500px;
+         
         
      
          
@@ -31,12 +36,13 @@
 
     menu a{
         border-radius: 10px 10px 0px 0px;
+        background-color: gray;
     }
 
     main{
         width: 70vw;
-          max-width: 700px;
-         padding: 20px;
+        max-width: 700px;
+        padding: 20px;
     }
 
     article h2{

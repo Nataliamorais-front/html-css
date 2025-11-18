@@ -18,8 +18,8 @@ body{
 
 }
 
-header{
-    background-color: #ececec;
+header.cabecalho{
+    background-color: #c72c2c;
 }
 
 header h1{
@@ -29,6 +29,8 @@ header h1{
 
 menu{
     display: none;
+   
+   
 }
 
 menu ul{
@@ -36,18 +38,21 @@ menu ul{
 }
 
 menu a{
-    display: block;
+    display: flex;
+    flex-direction: column;
     color: black;
     text-decoration: none;
     padding: 10px;
-    background-color: rgb(121, 120, 120);
-    color: white;
-    text-align: center;
-    border-top: 2px solid rgb(29, 29, 29);
+    background-color: white;
+    width: 100px;
+   
+    
+   
+  
 }
 
 menu a:hover{
-    background-color: rgb(204, 204, 204);
+    background-color: red;
 }
 
 main{
