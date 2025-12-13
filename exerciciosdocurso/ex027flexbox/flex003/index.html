@@ -6,7 +6,7 @@
     <title>flex-box</title>
     <style>
 
-      /*  Direção dos eixos */
+      /*  aprendendo sobre flex-wrap */
 
         *{
             box-sizing: border-box;
@@ -14,7 +14,8 @@
         div.container{
             background-color: blue;
             display: flex;
-            flex-direction: row;
+           flex-direction: row;
+           flex-wrap: wrap;
            
             
             
@@ -23,6 +24,7 @@
          }
 
         div.item{
+            width: 200px;
             background-color: coral;
             border: 1px solid black;
             padding: 10px;
@@ -32,16 +34,39 @@
             
             
         }
+
+        .container2{
+            background-color: rgb(50, 194, 194);
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .box{
+            background-color: brown;
+            max-width: 250px;
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">B</div>
-        <div class="item">B</div>
-        <div class="item">B</div>
-        <div class="item">D</div>
+        <div class="item"> Exemplo de bloco A</div>
+        <div class="item"> Exemplo de bloco B</div>
+        <div class="item"> Exemplo de bloco B</div>
+        <div class="item"> Exemplo de bloco B</div>
+        <div class="item"> Exemplo de bloco B</div>
+        <div class="item"> Exemplo de bloco D</div>
+    </div>
+
+    <div class="container2">
+        <div class="box">Exemplo 2 </div>
+        <div class="box">Exemplo 2</div>
+        <div class="box">Exemplo 2</div>
+        <div class="box">Exemplo 2</div>
+        <div class="box">Exemplo 2</div>
+        <div class="box">Exemplo 2</div>
     </div>
 </body>
 </html>
