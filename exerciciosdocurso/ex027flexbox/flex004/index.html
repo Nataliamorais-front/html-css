@@ -6,16 +6,20 @@
     <title>flex-box</title>
     <style>
 
-      /*  aprendendo sobre flex-wrap */
+      /*  aprendendo sobre justify-content */
 
         *{
             box-sizing: border-box;
         }
         div.container{
+            height: 300px;
             background-color: blue;
             display: flex;
-           flex-direction: row;
-           flex-wrap: wrap;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+           
+           
            
             
             
@@ -24,10 +28,10 @@
          }
 
         div.item{
-            width: 200px;
+            
             background-color: coral;
             border: 1px solid black;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
            
             
@@ -35,38 +39,19 @@
             
         }
 
-        .container2{
-            background-color: rgb(50, 194, 194);
-            display: flex;
-            flex-flow: row wrap;
-        }
 
-        .box{
-            background-color: brown;
-            max-width: 250px;
-            border: 1px solid black;
-            padding: 10px;
-            
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item"> Exemplo de bloco A</div>
-        <div class="item"> Exemplo de bloco B</div>
-        <div class="item"> Exemplo de bloco B</div>
-        <div class="item"> Exemplo de bloco B</div>
-        <div class="item"> Exemplo de bloco B</div>
-        <div class="item"> Exemplo de bloco D</div>
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> B</div>
+        <div class="item"> B</div>
+        <div class="item"> B</div>
+        <div class="item"> D</div>
     </div>
 
-    <div class="container2">
-        <div class="box">Exemplo 2 </div>
-        <div class="box">Exemplo 2</div>
-        <div class="box">Exemplo 2</div>
-        <div class="box">Exemplo 2</div>
-        <div class="box">Exemplo 2</div>
-        <div class="box">Exemplo 2</div>
-    </div>
+
 </body>
 </html>
