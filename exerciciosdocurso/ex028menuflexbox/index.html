@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header{
+        background-color:#BDB76B;
+        padding: 8px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        
+    }
+
+    #iburguer{
+        color: white;
+       
+    }
+
+    h1{
+        color: #fff;
+    }
+
+    nav{
+        display: none;
+    }
+
+
+
+    nav a {
+        margin: 5px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.05rem;
+        
+    }
+
+    nav a:hover{
+        background-color: #DCDCDC;
+        padding: 12px;
+        border-radius: 8px;
+        color: #000;
+    }
+
+    main{
+        
+        background-color: #808080;
+        margin: 10px;
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid #F0E68C;
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        
+    }
+
+
+        @media (max-width: 800px){
+            header{
+                flex-flow: column wrap;
+            }
+
+            nav a{
+                
+                text-align: center;
+            }
+        }
+
+
+
+
+
+
+
+</style>
+<body>
+    <header>
+        <h1>Menu</h1>
+        <nav id="imenu">
+        <span class="material-symbols-outlined" id="iburguer" onclick="Menuclick()">
+            menu
+        </span>
+            <a href="#">Sobre</a>
+            <a href="#">Sobre</a>
+            <a href="#">Sobre</a>
+            <a href="#">Sobre</a>
+            <a href="#">Sobre</a>
+        </nav>
+
+    </header>
+
+    <main>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, exercitationem sint commodi, ipsum excepturi maxime, aliquam corporis optio quisquam quasi facilis reprehenderit error sapiente! Esse non consectetur eveniet accusamus assumenda magnam quisquam quia architecto praesentium, rerum mollitia beatae tempora, amet fugit unde aut, suscipit qui odio eius labore quod pariatur earum itaque aliquam. Nisi repellendus explicabo quidem maxime commodi? Voluptatum ratione ipsum placeat dicta nobis officia tenetur at corrupti reprehenderit neque magnam eligendi quaerat, error inventore voluptatibus adipisci repudiandae nam optio, et aut minus delectus officiis sapiente cumque! Voluptatem impedit corrupti vitae consectetur laudantium facilis maxime sunt eligendi cupiditate sint?</p>
+        
+    </main>
+
+    <script>        
+        function MenuClick() {
+          if (imenu.style.display == 'block')  {
+                imenu.style.display = 'none'  }
+                else { imenu.style.display ='block' }
+
+        }
+    </script>
+</body>
+</html>
