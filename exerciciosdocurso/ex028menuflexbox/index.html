@@ -4,101 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css"  media= "screen and (max-width:550px)">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    body{
-        width: 100vw;
-        height: 100vh;
-    }
-
-    header{
-        background-color:#BDB76B;
-        padding: 8px;
-
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-
-        
-    }
-
-    #iburguer{
-        color: white;
-       
-    }
-
-    h1{
-        color: #fff;
-    }
-
-    nav{
-        display: none;
-    }
-
-
-
-    nav a {
-        margin: 5px;
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.05rem;
-        
-    }
-
-    nav a:hover{
-        background-color: #DCDCDC;
-        padding: 12px;
-        border-radius: 8px;
-        color: #000;
-    }
-
-    main{
-        
-        background-color: #808080;
-        margin: 10px;
-        padding: 8px;
-        border-radius: 10px;
-        border: 1px solid #F0E68C;
-
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        
-    }
-
-
-        @media (max-width: 800px){
-            header{
-                flex-flow: column wrap;
-            }
-
-            nav a{
-                
-                text-align: center;
-            }
-        }
-
-
-
-
-
-
-
-</style>
 <body>
     <header>
         <h1>Menu</h1>
-        <nav id="imenu">
-        <span class="material-symbols-outlined" id="iburguer" onclick="Menuclick()">
+        <span class="material-symbols-outlined" id="iburguer" onclick="menuClick()">
             menu
         </span>
+        <nav id="imenu">
+
             <a href="#">Sobre</a>
             <a href="#">Sobre</a>
             <a href="#">Sobre</a>
@@ -115,7 +34,7 @@
     </main>
 
     <script>        
-        function MenuClick() {
+        function menuClick() {
           if (imenu.style.display == 'block')  {
                 imenu.style.display = 'none'  }
                 else { imenu.style.display ='block' }

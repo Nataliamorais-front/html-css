@@ -1,0 +1,33 @@
+    body{
+        background-color: blue;
+    }
+    
+    header{
+                flex-flow: column wrap;
+            }
+
+            h1{
+               flex-basis: 70px;
+            }
+
+            nav{
+                flex-flow: column wrap;
+            }
+
+            #imenu{
+                display: none;
+            }
+
+            #iburguer{
+                display: block;
+                color: #292603;
+                width: 88vw;
+                text-align: right;
+            }
+
+            nav a{
+                
+                width: 80vw;
+                text-align: center;
+            }
+        
