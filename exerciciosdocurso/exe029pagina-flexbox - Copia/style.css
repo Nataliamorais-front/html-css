@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+h1, h2{
+    margin-bottom: 10px;
+}
+
+header, article.normal{
+    padding: 20px;
+    background-color: chocolate;
+}
+
+section.flex-content{
+    background-color: rgb(161, 155, 155);
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    gap: 10px;
+
+    
+
+}
+
+
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+
+   
+}
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+     
+}
+
+article> div.text{
+
+    flex: 1 1 500px;
+
+
+    padding: 20px;
+}
+
+article > div.media{
+
+    flex: 1 0 500px;
+
+}
+
+div.media > img{
+
+    display: block;
+    margin: auto;
+    max-width: 100%;
+
+}
