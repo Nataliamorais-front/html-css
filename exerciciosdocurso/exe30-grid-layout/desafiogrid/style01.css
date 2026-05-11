@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-grid{
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    
+    gap: 5px;
+    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+
+    
+   
+}
+
+.header{
+    background-color: blue;
+    grid-column: 1 / span 2;
+}
+
+.nav{
+    background-color: gray;
+    grid-column: 1 / span 1;
+ 
+
+}
+
+.banner{
+    background-color: rgb(179, 116, 23);
+    grid-column: 2 / 3;
+   
+}
+
+.main{
+    background-color: black;
+    color: white;
+    grid-column: 1 / span 2;
+   
+}
+
+.card1{
+    grid-column: 1 / span 1;
+    background-color: pink;
+}
+
+.card2{
+    grid-column: 2 / span 1;
+    background-color: pink;
+}
+
+.rodape{
+    background-color: blueviolet;
+    grid-column: 1 / span 2;
+}
+
+
+
+@media (max-width: 700px){
+    .container-grid{
+        grid-template-columns: 1fr;
+    }
+
+ .header,
+.nav,
+.banner,
+.main,
+.card1,
+.card2,
+.rodape{
+    grid-column: 1;
+}
+}
